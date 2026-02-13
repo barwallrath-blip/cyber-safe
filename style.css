@@ -2,53 +2,60 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #0b1c2d;
-    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a192f;
+    color: #ccd6f6;
+    scroll-behavior: smooth;
 }
 
-/* HEADER */
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: #0d1b2a;
+/* NAVBAR */
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 20px 60px;
+    background-color: #0f172a;
+    position: sticky;
+    top: 0;
     z-index: 1000;
 }
 
 .logo {
     font-size: 22px;
-    font-weight: bold;
-    color: #3ec1f3;
+    font-weight: 700;
+    color: #38bdf8;
 }
 
-nav a {
-    margin-left: 25px;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
     text-decoration: none;
-    color: #ffffff;
+    color: #ccd6f6;
     transition: 0.3s;
 }
 
-nav a:hover {
-    color: #3ec1f3;
+.nav-links a:hover {
+    color: #38bdf8;
 }
 
 /* HERO */
+
 .hero {
-    height: 100vh;
+    height: 60vh;
+    background: linear-gradient(to right, #0a192f, #112240);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #0b1c2d, #112d4e);
     text-align: center;
-    padding-top: 80px;
 }
 
 .hero h1 {
@@ -58,101 +65,94 @@ nav a:hover {
 
 .hero p {
     font-size: 18px;
-    color: #bbbbbb;
+    opacity: 0.8;
 }
 
 /* SPLIT SECTIONS */
+
 .split-section {
     display: flex;
-    min-height: 80vh;
+    align-items: center;
+    padding: 80px 60px;
+    gap: 60px;
 }
 
 .split-section.reverse {
     flex-direction: row-reverse;
 }
 
-.split-image {
-    flex: 1;
-}
-
-.split-image img {
+.split-section .image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 600px;
+    border-radius: 12px;
 }
 
-.split-text {
-    flex: 1;
-    padding: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.split-section .text {
+    max-width: 500px;
 }
 
-.split-text h2 {
+.split-section h2 {
     font-size: 32px;
-    margin-bottom: 20px;
-    color: #3ec1f3;
+    color: #38bdf8;
+    margin-bottom: 15px;
 }
 
-.split-text p {
-    font-size: 18px;
+.split-section p {
+    font-size: 16px;
     line-height: 1.6;
-    color: #cccccc;
+    opacity: 0.85;
 }
 
-/* TIPS */
-.tips {
-    padding: 100px 10%;
-    background-color: #112d4e;
+/* SECURITY TIPS */
+
+.tips-section {
+    padding: 80px 60px;
+    background-color: #112240;
     text-align: center;
 }
 
-.tips h2 {
+.tips-section h2 {
     font-size: 32px;
     margin-bottom: 40px;
-    color: #3ec1f3;
+    color: #38bdf8;
 }
 
-.tips-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
 }
 
-.tip-card {
-    background-color: #0d1b2a;
-    padding: 25px 40px;
-    border-radius: 10px;
+.tip {
+    background-color: #0f172a;
+    padding: 25px;
+    border-radius: 12px;
     transition: 0.3s;
-    min-width: 250px;
 }
 
-.tip-card:hover {
-    background-color: #1b263b;
-    transform: translateY(-5px);
+.tip:hover {
+    background-color: #1e293b;
 }
 
 /* FOOTER */
+
 footer {
     text-align: center;
     padding: 30px;
-    background-color: #0d1b2a;
-    color: #aaaaaa;
+    background-color: #0f172a;
+    font-size: 14px;
+    opacity: 0.7;
 }
 
 /* RESPONSIVE */
+
 @media (max-width: 900px) {
     .split-section {
         flex-direction: column;
+        text-align: center;
     }
 
-    .split-text {
-        padding: 40px;
-    }
-
-    .hero h1 {
-        font-size: 36px;
+    .split-section.reverse {
+        flex-direction: column;
     }
 }
