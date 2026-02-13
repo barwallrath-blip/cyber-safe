@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     background: linear-gradient(to right, #0f172a, #1e3a8a);
     margin: 0;
     padding: 0;
@@ -24,14 +25,40 @@ h1 {
 h2 {
     margin-top: 30px;
     color: #93c5fd;
+=======
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #1e3a8a;
+    font-size: 40px;
+}
+
+h2 {
+    color: #1e3a8a;
+    margin-top: 40px;
+>>>>>>> e67b62402f9dafd5b217b188b7d841729e8a9e23
 }
 
 p {
     font-size: 18px;
+<<<<<<< HEAD
 }
 
 .footer {
     margin-top: 40px;
     font-size: 14px;
     opacity: 0.7;
+=======
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+footer {
+    margin-top: 50px;
+    color: gray;
+>>>>>>> e67b62402f9dafd5b217b188b7d841729e8a9e23
 }
