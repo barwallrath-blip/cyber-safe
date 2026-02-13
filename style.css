@@ -3,30 +3,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: #0f172a;
     color: #f1f5f9;
-    line-height: 1.6;
 }
 
-/* NAVIGATION */
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    background-color: rgba(15, 23, 42, 0.95);
-    position: fixed;
-    width: 100%;
+    padding: 20px 60px;
+    background-color: #0f172a;
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 22px;
     font-weight: bold;
     color: #38bdf8;
 }
@@ -34,7 +32,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 
 .nav-links a {
@@ -47,103 +45,65 @@ body {
     color: #38bdf8;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
-    height: 100vh;
-    background: linear-gradient(to right, #0f172a, #1e293b);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
+    min-height: 90vh;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    color: #94a3b8;
-}
-
-/* SPLIT SECTIONS */
-.split-section {
-    display: flex;
-    min-height: 80vh;
-}
-
-.split-section.reverse {
-    flex-direction: row-reverse;
-}
-
-.split-image {
+.hero-text {
     flex: 1;
-    background-size: cover;
-    background-position: center;
-}
-
-.phishing-img {
-    background-image: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b");
-}
-
-.password-img {
-    background-image: url("https://images.unsplash.com/photo-1556157382-97eda2d62296");
-}
-
-.twofa-img {
-    background-image: url("https://images.unsplash.com/photo-1510519138101-570d1dca3d66");
-}
-
-.split-text {
-    flex: 1;
-    padding: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 80px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
 }
 
-.split-text h2 {
-    font-size: 2rem;
+.hero-text h1 {
+    font-size: 48px;
     margin-bottom: 20px;
     color: #38bdf8;
 }
 
-.split-text p {
-    font-size: 1.1rem;
+.hero-text p {
+    font-size: 18px;
+    max-width: 400px;
     color: #cbd5e1;
 }
 
-/* TIPS SECTION */
-.tips-section {
-    padding: 100px 10%;
-    text-align: center;
-    background-color: #1e293b;
+.hero-image {
+    flex: 1;
+    background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+    background-size: cover;
+    background-position: center;
 }
 
-.tips-section h2 {
-    margin-bottom: 40px;
-    font-size: 2rem;
+/* SECTIONS */
+.section {
+    padding: 100px 80px;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
     color: #38bdf8;
 }
 
-.tips-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+.section p {
+    max-width: 700px;
+    line-height: 1.6;
+    color: #cbd5e1;
 }
 
-.tip-card {
-    background-color: #0f172a;
-    padding: 25px;
-    border-radius: 10px;
-    transition: 0.3s;
+.section ul {
+    margin-top: 20px;
+    line-height: 2;
+    color: #cbd5e1;
 }
 
-.tip-card:hover {
-    transform: translateY(-5px);
-    background-color: #334155;
+.dark {
+    background-color: #1e293b;
 }
 
 /* FOOTER */
@@ -152,19 +112,16 @@ footer {
     padding: 30px;
     background-color: #0f172a;
     color: #94a3b8;
+    font-size: 14px;
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-    .split-section {
+    .hero {
         flex-direction: column;
     }
 
-    .split-text {
-        padding: 40px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
+    .hero-text {
+        padding: 50px;
     }
 }

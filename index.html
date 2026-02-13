@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>CyberSafe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- NAVIGATION -->
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">CyberSafe</div>
         <ul class="nav-links">
@@ -21,57 +21,49 @@
 
     <!-- HERO SECTION -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Stay Safe Online 🛡️</h1>
-            <p>Your guide to smart digital security.</p>
+        <div class="hero-text">
+            <h1>Stay Safe Online</h1>
+            <p>Simple cybersecurity awareness for everyday users.</p>
         </div>
+        <div class="hero-image"></div>
     </section>
 
-    <!-- PHISHING SECTION -->
-    <section class="split-section" id="phishing">
-        <div class="split-image phishing-img"></div>
-        <div class="split-text">
-            <h2>What is Phishing?</h2>
-            <p>
-                Phishing is when attackers try to trick people into giving passwords
-                or personal information by pretending to be trustworthy.
-            </p>
-        </div>
+    <!-- PHISHING -->
+    <section id="phishing" class="section">
+        <h2>What is Phishing?</h2>
+        <p>
+            Phishing is when attackers try to trick people into revealing passwords 
+            or personal information by pretending to be trusted sources.
+        </p>
     </section>
 
-    <!-- PASSWORD SECTION -->
-    <section class="split-section reverse" id="passwords">
-        <div class="split-image password-img"></div>
-        <div class="split-text">
-            <h2>Strong Passwords</h2>
-            <p>
-                A strong password includes uppercase and lowercase letters,
-                numbers, symbols, and should be at least 12 characters long.
-            </p>
-        </div>
+    <!-- PASSWORDS -->
+    <section id="passwords" class="section dark">
+        <h2>Strong Passwords</h2>
+        <p>
+            A strong password includes uppercase and lowercase letters, 
+            numbers, symbols, and should be at least 12 characters long.
+        </p>
     </section>
 
-    <!-- 2FA SECTION -->
-    <section class="split-section" id="2fa">
-        <div class="split-image twofa-img"></div>
-        <div class="split-text">
-            <h2>Two-Factor Authentication</h2>
-            <p>
-                2FA adds an extra layer of protection by requiring a second
-                verification step, like a code sent to your phone.
-            </p>
-        </div>
+    <!-- 2FA -->
+    <section id="2fa" class="section">
+        <h2>Two-Factor Authentication</h2>
+        <p>
+            2FA adds an extra layer of security by requiring something you know 
+            (password) and something you have (phone or token).
+        </p>
     </section>
 
     <!-- SECURITY TIPS -->
-    <section class="tips-section" id="tips">
+    <section id="tips" class="section dark">
         <h2>Security Tips</h2>
-        <div class="tips-grid">
-            <div class="tip-card">Never click suspicious links</div>
-            <div class="tip-card">Enable 2FA on all accounts</div>
-            <div class="tip-card">Use a password manager</div>
-            <div class="tip-card">Keep software updated</div>
-        </div>
+        <ul>
+            <li>Never click suspicious email links</li>
+            <li>Enable 2FA on all accounts</li>
+            <li>Use a password manager</li>
+            <li>Keep your software updated</li>
+        </ul>
     </section>
 
     <!-- FOOTER -->
