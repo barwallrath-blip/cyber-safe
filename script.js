@@ -1,11 +1,3 @@
-const toggle = document.getElementById("modeToggle");
-
-toggle.addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-        toggle.textContent = "☀️";
-    } else {
-        toggle.textContent = "🌙";
-    }
-});
+function toggleTheme() {
+    document.body.classList.toggle("light-mode");
+}

@@ -8,68 +8,70 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">CyberSafe</div>
-        <ul class="nav-links">
-            <li><a href="#phishing">Phishing</a></li>
-            <li><a href="#passwords">Passwords</a></li>
-            <li><a href="#2fa">2FA</a></li>
-            <li><a href="#tips">Security Tips</a></li>
-        </ul>
-    </nav>
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="logo">CyberSafe</div>
+    <ul>
+        <li><a href="#phishing">Phishing</a></li>
+        <li><a href="#passwords">Passwords</a></li>
+        <li><a href="#2fa">2FA</a></li>
+        <li><a href="#tips">Security Tips</a></li>
+    </ul>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+</nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Stay Safe Online</h1>
-            <p>Simple cybersecurity awareness for everyday users.</p>
-        </div>
-        <div class="hero-image"></div>
-    </section>
+<!-- HERO SECTION -->
+<section class="split-section">
+    <div class="split-text">
+        <h1>Stay Safe Online 🛡️</h1>
+        <p>Cybersecurity awareness starts with knowledge and smart habits.</p>
+    </div>
+    <div class="hero-image"></div>
+</section>
 
-    <!-- PHISHING -->
-    <section id="phishing" class="section">
-        <h2>What is Phishing?</h2>
-        <p>
-            Phishing is when attackers try to trick people into revealing passwords 
-            or personal information by pretending to be trusted sources.
-        </p>
-    </section>
+<!-- PHISHING -->
+<section id="phishing" class="content-section">
+    <h2>What is Phishing?</h2>
+    <p>
+        Phishing is a cyberattack where attackers trick users into revealing
+        sensitive information like passwords or credit card numbers by pretending
+        to be legitimate organizations.
+    </p>
+</section>
 
-    <!-- PASSWORDS -->
-    <section id="passwords" class="section dark">
-        <h2>Strong Passwords</h2>
-        <p>
-            A strong password includes uppercase and lowercase letters, 
-            numbers, symbols, and should be at least 12 characters long.
-        </p>
-    </section>
+<!-- PASSWORDS -->
+<section id="passwords" class="content-section dark">
+    <h2>Strong Passwords</h2>
+    <p>
+        A strong password includes uppercase and lowercase letters, numbers,
+        symbols, and should be at least 12 characters long.
+    </p>
+</section>
 
-    <!-- 2FA -->
-    <section id="2fa" class="section">
-        <h2>Two-Factor Authentication</h2>
-        <p>
-            2FA adds an extra layer of security by requiring something you know 
-            (password) and something you have (phone or token).
-        </p>
-    </section>
+<!-- 2FA -->
+<section id="2fa" class="content-section">
+    <h2>Two-Factor Authentication</h2>
+    <p>
+        2FA adds an additional layer of protection by requiring a second
+        verification step such as a code sent to your phone.
+    </p>
+</section>
 
-    <!-- SECURITY TIPS -->
-    <section id="tips" class="section dark">
-        <h2>Security Tips</h2>
-        <ul>
-            <li>Never click suspicious email links</li>
-            <li>Enable 2FA on all accounts</li>
-            <li>Use a password manager</li>
-            <li>Keep your software updated</li>
-        </ul>
-    </section>
+<!-- SECURITY TIPS -->
+<section id="tips" class="content-section dark">
+    <h2>Security Tips</h2>
+    <ul>
+        <li>Never click suspicious email links</li>
+        <li>Enable 2FA on all accounts</li>
+        <li>Use a password manager</li>
+        <li>Keep your software updated</li>
+    </ul>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        Created by Bar | Cybersecurity Student
-    </footer>
+<footer>
+    Created by Bar | Cybersecurity Student
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
