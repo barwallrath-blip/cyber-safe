@@ -1,114 +1,69 @@
-/* GENERAL */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberSafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #0b1c2d, #122b44);
-    color: white;
-}
+<body>
 
-h1, h2 {
-    color: #4fc3f7;
-}
+<nav class="navbar">
+    <div class="logo">CyberSafe</div>
+    <ul>
+        <li><a href="#phishing">Phishing</a></li>
+        <li><a href="#passwords">Passwords</a></li>
+        <li><a href="#2fa">2FA</a></li>
+    </ul>
+</nav>
 
-p {
-    color: #cfd8dc;
-    line-height: 1.6;
-}
+<header class="hero">
+    <h1>Stay Safe Online 🛡️</h1>
+    <p>Your guide to smart digital security.</p>
+</header>
 
-/* NAVBAR */
+<section id="phishing" class="section split">
+    <div class="image">
+        <img src="images/phishing.png" alt="Phishing concept">
+    </div>
+    <div class="text">
+        <h2>What is Phishing?</h2>
+        <p>
+            Phishing is when attackers trick users into revealing passwords
+            or personal data by pretending to be trustworthy organizations.
+        </p>
+    </div>
+</section>
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    background-color: #0a1624;
-    position: sticky;
-    top: 0;
-}
+<section id="passwords" class="section split reverse">
+    <div class="text">
+        <h2>Strong Passwords</h2>
+        <p>
+            A strong password includes uppercase, lowercase letters,
+            numbers, and symbols. It should be at least 12 characters long.
+        </p>
+    </div>
+    <div class="image">
+        <img src="images/workspace.jpg" alt="Secure workspace">
+    </div>
+</section>
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #4fc3f7;
-}
+<section id="2fa" class="section split">
+    <div class="image">
+        <img src="images/hacker.jpg" alt="Hacker security concept">
+    </div>
+    <div class="text">
+        <h2>Two-Factor Authentication</h2>
+        <p>
+            2FA adds an extra layer of security by requiring a second
+            verification step, such as a code sent to your phone.
+        </p>
+    </div>
+</section>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
+<footer>
+    <p>Created by Bar | Cybersecurity Student</p>
+</footer>
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: #4fc3f7;
-}
-
-/* HERO */
-
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 48px;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
-/* SECTIONS */
-
-.section {
-    padding: 80px 60px;
-}
-
-.split {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-.reverse {
-    flex-direction: row-reverse;
-}
-
-.image img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
-}
-
-.text {
-    max-width: 500px;
-}
-
-/* FOOTER */
-
-footer {
-    text-align: center;
-    padding: 30px;
-    background-color: #0a1624;
-    color: #90a4ae;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-    .split {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .reverse {
-        flex-direction: column;
-    }
-}
+</body>
+</html>

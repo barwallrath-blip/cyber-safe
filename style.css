@@ -1,16 +1,27 @@
-body {
+/* RESET */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #081b29, #0f3057);
-    color: white;
 }
 
-header {
+/* BODY */
+body {
+    background: linear-gradient(to right, #0b1c2d, #122b44);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: #0a1624;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -19,42 +30,48 @@ header {
     color: #4fc3f7;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 25px;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
-nav a:hover {
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
     color: #4fc3f7;
 }
 
+/* HERO */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
 .hero h1 {
     font-size: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.hero p {
-    color: #9bd4ff;
+/* SECTIONS */
+.section {
+    padding: 80px 60px;
 }
 
 .split {
     display: flex;
     align-items: center;
-    padding: 60px;
-    gap: 50px;
+    gap: 60px;
 }
 
-.split.reverse {
+.reverse {
     flex-direction: row-reverse;
 }
 
-.split img {
+.image img {
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
@@ -66,23 +83,34 @@ nav a:hover {
 
 .text h2 {
     color: #4fc3f7;
+    margin-bottom: 20px;
 }
 
+.text p {
+    color: #cfd8dc;
+    line-height: 1.6;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 30px;
-    background-color: #06121d;
+    background-color: #0a1624;
     color: #90a4ae;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 900px) {
     .split {
         flex-direction: column;
         text-align: center;
     }
 
-    .split.reverse {
+    .reverse {
         flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 36px;
     }
 }
