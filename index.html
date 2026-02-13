@@ -1,77 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CyberSafe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberSafe</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- NAVIGATION -->
-<nav class="navbar">
+<header>
     <div class="logo">CyberSafe</div>
-    <ul>
-        <li><a href="#phishing">Phishing</a></li>
-        <li><a href="#passwords">Passwords</a></li>
-        <li><a href="#2fa">2FA</a></li>
-        <li><a href="#tips">Security Tips</a></li>
-    </ul>
-    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
-</nav>
+    <nav>
+        <a href="#phishing">Phishing</a>
+        <a href="#passwords">Passwords</a>
+        <a href="#2fa">2FA</a>
+        <a href="#tips">Security Tips</a>
+    </nav>
+</header>
 
-<!-- HERO SECTION -->
-<section class="split-section">
-    <div class="split-text">
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
         <h1>Stay Safe Online 🛡️</h1>
-        <p>Cybersecurity awareness starts with knowledge and smart habits.</p>
+        <p>Your guide to smart digital security.</p>
     </div>
-    <div class="hero-image"></div>
 </section>
 
 <!-- PHISHING -->
-<section id="phishing" class="content-section">
-    <h2>What is Phishing?</h2>
-    <p>
-        Phishing is a cyberattack where attackers trick users into revealing
-        sensitive information like passwords or credit card numbers by pretending
-        to be legitimate organizations.
-    </p>
+<section id="phishing" class="split-section">
+    <div class="split-image">
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" alt="Cyber security">
+    </div>
+    <div class="split-text">
+        <h2>What is Phishing?</h2>
+        <p>
+            Phishing is when attackers try to trick people into giving passwords or personal information by pretending to be trustworthy.
+        </p>
+    </div>
 </section>
 
 <!-- PASSWORDS -->
-<section id="passwords" class="content-section dark">
-    <h2>Strong Passwords</h2>
-    <p>
-        A strong password includes uppercase and lowercase letters, numbers,
-        symbols, and should be at least 12 characters long.
-    </p>
+<section id="passwords" class="split-section reverse">
+    <div class="split-image">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Secure system">
+    </div>
+    <div class="split-text">
+        <h2>Strong Passwords</h2>
+        <p>
+            A strong password includes uppercase and lowercase letters, numbers, symbols, and should be at least 12 characters long.
+        </p>
+    </div>
 </section>
 
 <!-- 2FA -->
-<section id="2fa" class="content-section">
-    <h2>Two-Factor Authentication</h2>
-    <p>
-        2FA adds an additional layer of protection by requiring a second
-        verification step such as a code sent to your phone.
-    </p>
+<section id="2fa" class="split-section">
+    <div class="split-image">
+        <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72" alt="Two factor authentication">
+    </div>
+    <div class="split-text">
+        <h2>Two-Factor Authentication</h2>
+        <p>
+            2FA adds an extra layer of protection by requiring a second verification step, like a code sent to your phone.
+        </p>
+    </div>
 </section>
 
 <!-- SECURITY TIPS -->
-<section id="tips" class="content-section dark">
+<section id="tips" class="tips">
     <h2>Security Tips</h2>
-    <ul>
-        <li>Never click suspicious email links</li>
-        <li>Enable 2FA on all accounts</li>
-        <li>Use a password manager</li>
-        <li>Keep your software updated</li>
-    </ul>
+    <div class="tips-container">
+        <div class="tip-card">Never click suspicious links</div>
+        <div class="tip-card">Enable 2FA on all accounts</div>
+        <div class="tip-card">Use a password manager</div>
+        <div class="tip-card">Keep software updated</div>
+    </div>
 </section>
 
 <footer>
     Created by Bar | Cybersecurity Student
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

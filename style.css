@@ -1,163 +1,158 @@
-/* GLOBAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #0b1b2b;
+    background-color: #0b1c2d;
     color: #ffffff;
-    scroll-behavior: smooth;
 }
 
-/* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    background: #071423;
+/* HEADER */
+header {
     position: fixed;
     width: 100%;
     top: 0;
+    background-color: #0d1b2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
     z-index: 1000;
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
+.logo {
+    font-size: 22px;
     font-weight: bold;
-    color: #4db8ff;
+    color: #3ec1f3;
 }
 
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.navbar a {
+nav a {
+    margin-left: 25px;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     transition: 0.3s;
 }
 
-.navbar a:hover {
-    color: #4db8ff;
+nav a:hover {
+    color: #3ec1f3;
 }
 
-.theme-toggle {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: white;
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0b1c2d, #112d4e);
+    text-align: center;
+    padding-top: 80px;
 }
 
-/* SPLIT HERO */
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #bbbbbb;
+}
+
+/* SPLIT SECTIONS */
 .split-section {
     display: flex;
-    height: 100vh;
-    margin-top: 80px;
+    min-height: 80vh;
+}
+
+.split-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.split-image {
+    flex: 1;
+}
+
+.split-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .split-text {
     flex: 1;
-    padding: 100px;
+    padding: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.split-text h1 {
-    font-size: 3rem;
-    color: #4db8ff;
+.split-text h2 {
+    font-size: 32px;
     margin-bottom: 20px;
+    color: #3ec1f3;
 }
 
 .split-text p {
-    font-size: 1.2rem;
+    font-size: 18px;
+    line-height: 1.6;
     color: #cccccc;
 }
 
-/* HERO IMAGE */
-.hero-image {
-    flex: 1;
-    background-image: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b");
-    background-size: cover;
-    background-position: center;
+/* TIPS */
+.tips {
+    padding: 100px 10%;
+    background-color: #112d4e;
+    text-align: center;
 }
 
-/* CONTENT SECTIONS */
-.content-section {
-    padding: 100px 80px;
+.tips h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #3ec1f3;
 }
 
-.content-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #4db8ff;
+.tips-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.content-section p,
-.content-section li {
-    font-size: 1.1rem;
-    color: #dddddd;
-    line-height: 1.6;
+.tip-card {
+    background-color: #0d1b2a;
+    padding: 25px 40px;
+    border-radius: 10px;
+    transition: 0.3s;
+    min-width: 250px;
 }
 
-.content-section ul {
-    padding-left: 20px;
-}
-
-.dark {
-    background-color: #071423;
+.tip-card:hover {
+    background-color: #1b263b;
+    transform: translateY(-5px);
 }
 
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 40px;
-    background-color: #071423;
+    padding: 30px;
+    background-color: #0d1b2a;
     color: #aaaaaa;
-}
-
-/* LIGHT MODE */
-.light-mode {
-    background-color: #f4f4f4;
-    color: #111;
-}
-
-.light-mode .navbar {
-    background: #ffffff;
-}
-
-.light-mode .navbar a {
-    color: #111;
-}
-
-.light-mode .content-section.dark {
-    background-color: #eaeaea;
-}
-
-.light-mode footer {
-    background: #eaeaea;
-    color: #333;
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .split-section {
         flex-direction: column;
-        height: auto;
     }
 
     .split-text {
-        padding: 60px 30px;
+        padding: 40px;
     }
 
-    .hero-image {
-        height: 300px;
+    .hero h1 {
+        font-size: 36px;
     }
 }
