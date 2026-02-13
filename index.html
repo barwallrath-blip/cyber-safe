@@ -1,49 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberSafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
-<nav>
-    <div class="logo">CyberSafe</div>
-    <ul class="nav-links">
-        <li><a href="#phishing">Phishing</a></li>
-        <li><a href="#password">Passwords</a></li>
-        <li><a href="#2fa">2FA</a></li>
-        <li><a href="#tips">Security Tips</a></li>
-    </ul>
-    <button id="modeToggle">🌙</button>
-</nav>
-
-<div class="container">
-
-    <h1>Stay Safe Online 🔐</h1>
-
-    <section id="phishing">
-        <h2>What is Phishing?</h2>
-        <p>Phishing is when attackers try to trick people into giving passwords or personal information.</p>
-    </section>
-
-    <section id="password">
-        <h2>Strong Password</h2>
-        <p>A strong password should include letters, numbers, and symbols.</p>
-    </section>
-
-    <section id="2fa">
-        <h2>Two-Factor Authentication</h2>
-        <p>2FA adds an extra layer of security to your account.</p>
-    </section>
-
-    <section id="tips">
-        <h2>Security Tips</h2>
-        <ul>
-            <li>Never click suspicious email links</li>
-            <li>Enable 2FA on all accounts</li>
-            <li>Use a password manager</li>
-            <li>Keep software updated</li>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">CyberSafe</div>
+        <ul class="nav-links">
+            <li><a href="#phishing">Phishing</a></li>
+            <li><a href="#passwords">Passwords</a></li>
+            <li><a href="#2fa">2FA</a></li>
+            <li><a href="#tips">Security Tips</a></li>
         </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Stay Safe Online 🛡️</h1>
+            <p>Your guide to smart digital security.</p>
+        </div>
     </section>
 
-    <p class="footer">Created by Bar | Cybersecurity Student</p>
+    <!-- PHISHING SECTION -->
+    <section class="split-section" id="phishing">
+        <div class="split-image phishing-img"></div>
+        <div class="split-text">
+            <h2>What is Phishing?</h2>
+            <p>
+                Phishing is when attackers try to trick people into giving passwords
+                or personal information by pretending to be trustworthy.
+            </p>
+        </div>
+    </section>
 
-</div>
+    <!-- PASSWORD SECTION -->
+    <section class="split-section reverse" id="passwords">
+        <div class="split-image password-img"></div>
+        <div class="split-text">
+            <h2>Strong Passwords</h2>
+            <p>
+                A strong password includes uppercase and lowercase letters,
+                numbers, symbols, and should be at least 12 characters long.
+            </p>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- 2FA SECTION -->
+    <section class="split-section" id="2fa">
+        <div class="split-image twofa-img"></div>
+        <div class="split-text">
+            <h2>Two-Factor Authentication</h2>
+            <p>
+                2FA adds an extra layer of protection by requiring a second
+                verification step, like a code sent to your phone.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECURITY TIPS -->
+    <section class="tips-section" id="tips">
+        <h2>Security Tips</h2>
+        <div class="tips-grid">
+            <div class="tip-card">Never click suspicious links</div>
+            <div class="tip-card">Enable 2FA on all accounts</div>
+            <div class="tip-card">Use a password manager</div>
+            <div class="tip-card">Keep software updated</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        Created by Bar | Cybersecurity Student
+    </footer>
 
 </body>
+</html>
